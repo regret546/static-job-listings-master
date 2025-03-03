@@ -1,4 +1,5 @@
 /*! tailwindcss v4.0.8 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -1788,6 +1789,18 @@
   .transform-view {
     transform-box: view-box;
   }
+}
+@layer base {
+  html {
+    font-family: "League Spartan", sans-serif;
+  }
+}
+:root {
+  --color-primary: hsl(180, 29%, 50%);
+  --color-light-grayish-cyan: hsl(180, 52%, 96%);
+  --color-light-grayish-cyan2: hsl(180, 31%, 95%);
+  --color-dark-grayish-cyan: hsl(180, 8%, 52%);
+  --color-very-dark-graying-cyan: hsl(180, 14%, 20%);
 }
 @property --tw-translate-x {
   syntax: "*";

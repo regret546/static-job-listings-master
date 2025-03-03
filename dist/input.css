@@ -1,1 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 @import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: "League Spartan", sans-serif;
+  }
+}
+
+:root {
+  /* #Primary */
+  --color-primary: hsl(180, 29%, 50%);
+  /*  Neutral */
+  --color-light-grayish-cyan: hsl(180, 52%, 96%); /* background */
+  --color-light-grayish-cyan2: hsl(180, 31%, 95%); /* filter tablets */
+  --color-dark-grayish-cyan: hsl(180, 8%, 52%);
+  --color-very-dark-graying-cyan: hsl(180, 14%, 20%);
+}

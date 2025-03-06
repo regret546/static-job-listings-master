@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-amber-800: oklch(0.473 0.137 46.201);
     --spacing: 0.25rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -440,11 +441,20 @@
   .max-h-screen {
     max-height: 100vh;
   }
+  .min-h-\[100vh\] {
+    min-height: 100vh;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -1051,6 +1061,9 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-amber-800 {
+    background-color: var(--color-amber-800);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1802,7 +1815,7 @@
     font-family: "League Spartan", sans-serif;
   }
 }
-@utilities {
+@layer utilities {
   .bg-primary {
     background-color: var(--color-primary);
   }

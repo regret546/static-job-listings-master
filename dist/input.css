@@ -40,10 +40,10 @@
     color: var(--color-light-grayish-cyan2);
   }
 
-  .bg-light-dark-grayish-cyan {
+  .bg-dark-grayish-cyan {
     background-color: var(--color-dark-grayish-cyan);
   }
-  .color-light-dark-grayish-cyan {
+  .color-dark-grayish-cyan {
     color: var(--color-dark-grayish-cyan);
   }
 

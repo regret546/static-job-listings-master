@@ -47,10 +47,10 @@
     color: var(--color-dark-grayish-cyan);
   }
 
-  .bg-light-dark-grayish-cyan {
+  .bg-very-dark-grayish-cyan {
     background-color: var(--color-very-dark-graying-cyan);
   }
-  .color-light-dark-grayish-cyan {
+  .color-very-dark-grayish-cyan {
     color: var(--color-very-dark-graying-cyan);
   }
 }

@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-red-700: oklch(0.505 0.213 27.518);
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
@@ -456,6 +457,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -869,6 +873,9 @@
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 1;
     }
+  }
+  .gap-y-2 {
+    row-gap: calc(var(--spacing) * 2);
   }
   .divide-x {
     :where(& > :not(:last-child)) {
@@ -1312,6 +1319,12 @@
   .align-top {
     vertical-align: top;
   }
+  .text-\[0\.5rem\] {
+    font-size: 0.5rem;
+  }
+  .text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
   .text-\[1rem\] {
     font-size: 1rem;
   }
@@ -1543,6 +1556,9 @@
   }
   .scheme-only-light {
     color-scheme: only light;
+  }
+  .opacity-70 {
+    opacity: 70%;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
@@ -1845,6 +1861,22 @@
   }
   .transform-view {
     transform-box: view-box;
+  }
+  .marker\:text-red-500 {
+    & *::marker {
+      color: var(--color-red-500);
+    }
+    &::marker {
+      color: var(--color-red-500);
+    }
+  }
+  .marker\:text-red-700 {
+    & *::marker {
+      color: var(--color-red-700);
+    }
+    &::marker {
+      color: var(--color-red-700);
+    }
   }
 }
 :root {

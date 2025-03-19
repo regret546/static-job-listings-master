@@ -25,6 +25,10 @@
     color: var(--color-primary);
   }
 
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+
   .bg-light-grayish-cyan {
     background-color: var(--color-light-grayish-cyan);
   }

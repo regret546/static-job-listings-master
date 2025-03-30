@@ -31,7 +31,18 @@
       class="bg-light-grayish-cyan bg-cover w-full bg-no-repeat min-h-[100vh]"
     >
       <div class="mobile-bg w-full bg-primary">
-        <img class="w-full" src="/images/bg-header-mobile.svg" alt="" />
+        <!--     for mobile -->
+        <img
+          class="w-full md:hidden xs:block"
+          src="/images/bg-header-mobile.svg"
+          alt=""
+        />
+        <!--  for desktop -->
+        <img
+          class="w-full xs:hidden md:block"
+          src="/images/bg-header-desktop.svg"
+          alt=""
+        />
       </div>
       <article class="job_listing mt-[3rem]">
         <section
@@ -83,7 +94,7 @@
             </div>
           </div>
           <ul
-            class="job_sort flex flex-wrap items-center mt-2 md:mt-0 gap-5 gap-y-2 font-bold color-primary"
+            class="job_sort flex flex-wrap items-center md:justify-end mt-2 md:mt-0 gap-5 gap-y-2 font-bold color-primary"
           >
             <li
               class="bg-light-grayish-cyan2 p-2 rounded-md tracking-wide grid place-items-center h-[50px]"
